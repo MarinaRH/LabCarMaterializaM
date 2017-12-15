@@ -33,6 +33,11 @@ img.log-white {
   width: 80px;
 }
 
+/* download */
+.download {
+	background-color: var(--orange);
+}
+
 /* descktop */
 
 @media (min-width: 992px) {
