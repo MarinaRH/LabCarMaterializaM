@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>Lab Card2</title>
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!--Import materialize.css-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Lab Card2</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Import materialize.css-->
 		<link type="text/css" rel="stylesheet" href="vendors/css/materialize.min.css"/>
-		<!-- main.css-->
-		<link rel="stylesheet" type="text/css" href="css/main.css"> 
+	<!-- iconos materialize -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- main.css-->
+	<link rel="stylesheet" type="text/css" href="css/main.css"> 
 </head>
 <body>
   <header>
-		<nav>
+		<nav class="white">
 			<div class="nav-wrapper">
-				<a href="#" class="brand-logo">Logo</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="sass.html">Sass</a></li>
-					<li><a href="badges.html">Components</a></li>
-					<li><a href="collapsible.html">JavaScript</a></li>
+				<a href="#!" class="brand-logo"><img class="img-responsive" alt="Brand" src="assets/images/logoForma.png"></a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-text">menu</i></a>
+				<ul class="right hide-on-med-and-down ">
+					<li ><a class="black-text" href="#">Viaja</a></li>
+					<li><a class="black-text" href="#">Conduce</a></li>
+					<li><a class="black-text" href="#">Inicia sesion</a></li>
 				</ul>
 			</div>
-			</nav>
+		</nav>
   </header>
   <section class="register">
 		<div class="section">
       <div class="row">
-				<div class="box-register col s10 hide-on-large-only right">
+				<div class="box-register col s9 hide-on-large-only right ">
 					<h1>Comienza a viajar<br>con<span><img src="assets/images/logoBlanco.png" alt=""></span></h1>
 					<button>Descarga el app</button>
 				</div>
-				<div class="box-register col l4 hide-on-small-only hide-on-med-only right">
-					<h3>Disfruta del viaje</h3>
-					<h3>Eres dueño de tu vida</h3>
+				<div class="box-register col l5 hide-on-small-only hide-on-med-only right ">
+					<h4 class="font-weight">Disfruta del viaje</h4>
+					<h4 class="text-top font-weight" font-weight>Eres dueño de tu vida</h4>
 					<br>
 					<p>Viaja con <span><img  class="log-white"	src="assets/images/logoBlanco.png" alt=""></span></p>
-					<button >REGISTRATE</button>
+					<button class="margin-top ">REGISTRATE</button>
 					<div>
 						<span class="line">o bien</span>
 					</div>
-					<button>Conviértete en conductor</button>
+					<button class="margin-top font-weight">Conviértete en conductor</button>
 				</div>
 	    </div>
 	  </div>
@@ -54,7 +57,7 @@
           <img src="assets/images/iPhone6Plus.png" alt="iphone">
         </div>
         <div class="col l4 hide-on-small-only hide-on-med-only">
-          <h4>Descarga la nueva app</h4>
+          <h5 class="font-weight">Descarga la nueva app</h5>
           <p>La version actualizada de LabCar esta llena de nuevas funciones para llegar a donde quieras aún mas fácil y rápido</p>
           <p>Con solo tocar un botón, un auto llega justo a tu ubicacion. Súbete y no te preocupes: tu conductor sabe exactamente a donde ir</p>
         </div>
@@ -65,10 +68,10 @@
     </div>
   </section>
   <section class="driver">
-		<div class="row">
-			<div class="col s12 l4 right box-driver">
+		<div class="row ">
+			<div class="col s12 l4  driver-text right">
 				<h4>Conduce cuando quieras</h4>
-				<p >Labcar es una opcion flexible para alcanzar las <br> metas financieras</p>
+				<p>Labcar es una opcion flexible para alcanzar las <br> metas financieras</p>
 				<button>Conviertete en conductor</button>
 			</div>
 		</div>
@@ -81,11 +84,11 @@
           <p>Consulta las tarifas Labcar aquí</p>
           <form action="">
             <div >
-              <img  src="assets/images/shape.png" alt="shape">
+              <img  class="left" src="assets/images/shape.png" alt="shape">
               <input type="text" name="" placeholder="Ingrese su punto de Partida">
             </div>
             <br>
-            <div>
+            <div class="inline">
               <img src="assets/images/shape2.png" alt="shape">
                 <input type="text" name="" placeholder="Ingrese su Destino">
             </div>
@@ -102,11 +105,11 @@
     </div>
   </section>
   <footer>
-    <img src="assets/images/logoBlanco.png" alt="">
-    <hr>
+    <img class="margin-lef padding-top"	src="assets/images/logoBlanco.png" alt="">
+    <hr class="margin-lef">
     <div class="container">
       <div class="row">
-        <div class="col s6 l3  flex-container ">
+        <div class="col s6 l3  flex-container icon-group right ">
           <ul class="flex-end">
             <li><i class="fa fa-facebook" aria-hidden="true"></i></li> 
             <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
@@ -115,8 +118,8 @@
             <li><i class="fa fa-play" aria-hidden="true"></i></li>
           </ul>
         </div>
-        <div class="col s6 l3 left">
-          <ul>
+        <div class="col s6 l3">
+          <ul class="line-height">
             <li>Viaja</li>
             <li>Conduce</li>
             <li>Ciudades</li>
@@ -128,7 +131,7 @@
           </ul>
         </div>
         <div class="col s6 l3 hide-on-small-only">
-          <ul>
+          <ul class="line-height">
             <li>Oportunidades</li>
             <li>Nuestra historia</li>
             <li>API de LabCar</li>
@@ -147,8 +150,8 @@
         </div>
       </div>
     </div>
-    <hr>
-    <p>&#169 2017 LabCar technologies Inc.</p>
+    <hr class="margin-lef">
+    <p class="margin-lef padding-top">&#169 2017 LabCar technologies Inc.</p>
   </footer>
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
