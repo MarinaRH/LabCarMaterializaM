@@ -8,6 +8,19 @@
     --orange:rgb(247,182,23);
   }
 /* reutilizables */
+
+.center {
+	text-align: center;
+}
+/* 
+.right {
+	float: right;
+}
+
+.left {
+float: left;
+} */
+
 /* header */
 
 /* section register */
@@ -38,6 +51,52 @@ img.log-white {
 	background-color: var(--orange);
 }
 
+.box {
+	padding: 21px;
+}
+
+.box-mobile {
+	border: solid 1px white;
+}
+
+/* driver */
+
+.driver {
+	background-image:url("../assets/images/conduce.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+	height: 450px;
+}
+
+.box-driver {
+	box-sizing: border-box;
+	padding: 80px 21px 230px 21px;
+	background-color: rgba(0, 0, 0, 0.37);
+}
+
+/* rates */
+.rates {
+	background-color: var(--orange);
+}
+
+.img-map {
+	height:70vh ;
+	width: 100%;
+	border:1px solid white;
+	padding: 10px;
+	margin-top: 35px;
+	}
+
+	/* footer */
+ footer {
+	background-color: rgb(43,43,43);
+	padding-top: 21px;
+ }
+
+
+
 /* descktop */
 
 @media (min-width: 992px) {
@@ -59,4 +118,36 @@ img.log-white {
 	background-color: white;
 	width: 110px;
 	}
+
+	/* download desktop */
+	.download {
+		padding: 18px;
+	}
+
+	.box-download {
+		border: white 1px solid;
+		border-left: none;
+		margin-left: -21px;
+		box-sizing: border-box;
+		margin-right:90px;
+	}
+
+	.box-mobile {
+		border: none;
+	}
+
+	/* footer */
+	.flex-container {
+		height:30vh;
+		display: flex;
+	}
+	
+	.flex-end{
+		align-self: flex-end;
+	}
+	
+	.uno {
+		float: left;
+	}
+	
 }
