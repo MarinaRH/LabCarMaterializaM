@@ -1,0 +1,46 @@
+/* modal para el login */
+.login {
+    width: 50%;
+    background-color: rgba(214, 212, 212, 0.63);
+}
+
+.log-cen {
+    position: relative;
+    left: 160px; 
+    padding: 25px;
+}
+
+.input-field {
+    border:1px solid rgba(146, 142, 142, 0.623);
+    border-radius:7px;
+    height: 47px;
+}
+
+/* modal para la seccion del conductor */
+.modal-content {
+    background-color: rgba(207, 201, 201, 0.651);
+}
+a.boton{
+    width: 220%;
+}
+
+.modal2 {
+    color:black;
+}
+
+ input.in{
+    background-color:  white;
+    color:black !important;
+ }
+
+/* modal para convertirse en un conductor */
+#modal3 {
+    width: 550px;
+}
+
+.btn-mod3 {
+    width: 100%;
+    border-radius: 10px;
+    background-color:rgba(15, 161, 132, 0.562); 
+    height:45px ;
+}

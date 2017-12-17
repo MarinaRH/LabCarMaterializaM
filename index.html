@@ -8,46 +8,188 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--Import materialize.css-->
-		<link type="text/css" rel="stylesheet" href="vendors/css/materialize.min.css"/>
+	<link type="text/css" rel="stylesheet" href="vendors/css/materialize.min.css"/>
 	<!-- iconos materialize -->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- main.css-->
 	<link rel="stylesheet" type="text/css" href="css/main.css"> 
+	<link rel="stylesheet" type="text/css" href="css/modal.css"> 
 </head>
 <body>
   <header>
-		<nav class="white">
+		<nav class="white padding-lef font-weight">
 			<div class="nav-wrapper">
-				<a href="#!" class="brand-logo"><img class="img-responsive" alt="Brand" src="assets/images/logoForma.png"></a>
+				<a href="#!" class="brand-logo log-header"><img class="img-responsive" alt="Brand" src="assets/images/logoForma.png"></a>
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-text">menu</i></a>
 				<ul class="right hide-on-med-and-down ">
 					<li ><a class="black-text" href="#">Viaja</a></li>
 					<li><a class="black-text" href="#">Conduce</a></li>
-					<li><a class="black-text" href="#">Inicia sesion</a></li>
+					<li><a class="black-text waves-effect waves-light  modal-trigger" href="#modal1">Inicia sesion</a></li>
 				</ul>
 			</div>
 		</nav>
+		<!-- Modal Structure -->
+		<div id="modal1" class="modal">
+			<div class="modal-content teal lighten-2">
+				<div class="center">
+          <img src="assets/images/login.gif" alt="">
+				</div>
+        <hr>
+        <div class="login log-cen">
+          <div class="input-field">
+            <i class="material-icons prefix" aria-hidden="true">person</i>
+            <input class="icon_prefix"	type="text"  placeholder="users">
+          </div>	
+          <div class="input-field">
+            <i class="material-icons prefix" aria-hidden="true">work</i>
+            <input class="icon_prefix"	type="text"  placeholder="password">
+          </div>
+          <div class="center">
+            <button type="submit" class="orange btn">LOGING</button>
+          </div>
+          <p>Forgot password? <span class="red-text">Click Here</span></p>
+        </div>
+			</div>
+		</div>
   </header>
   <section class="register">
-		<div class="section">
-      <div class="row">
-				<div class="box-register col s9 hide-on-large-only right ">
-					<h1>Comienza a viajar<br>con<span><img src="assets/images/logoBlanco.png" alt=""></span></h1>
-					<button>Descarga el app</button>
+		<div class="row">
+			<div class="box-register col s10 hide-on-large-only right ">
+				<h3 class=" margin-top ">Comienza a viajar<br>con<span><img class="margin-lef" src="assets/images/logoBlanco.png" alt=""></span></h3>
+				<a class="waves-effect waves-light btn margin-top font-weight white black-text pulse ">Descarga el app</a>
+			</div>
+			<div class="box-register col l5 hide-on-small-only hide-on-med-only right padding-lef">
+				<h4 class="font-weight">Disfruta del viaje</h4>
+				<h4 class="text-top font-weight">Eres dueño de tu vida</h4>
+				<br>
+				<p>Viaja con <span><img class="log-white"	src="assets/images/logoBlanco.png" alt=""></span></p>
+				<a class="btn margin-top font-weight white black-text waves-effect waves-light  modal-trigger" href="#modal2">REGISTRATE</a>
+				<div>
+					<span class="line">o bien</span>
 				</div>
-				<div class="box-register col l5 hide-on-small-only hide-on-med-only right ">
-					<h4 class="font-weight">Disfruta del viaje</h4>
-					<h4 class="text-top font-weight" font-weight>Eres dueño de tu vida</h4>
-					<br>
-					<p>Viaja con <span><img  class="log-white"	src="assets/images/logoBlanco.png" alt=""></span></p>
-					<button class="margin-top ">REGISTRATE</button>
-					<div>
-						<span class="line">o bien</span>
-					</div>
-					<button class="margin-top font-weight">Conviértete en conductor</button>
-				</div>
-	    </div>
-	  </div>
+				<a class=" btn margin-top font-weight white black-text pulse waves-effect waves-light  modal-trigger" href="#modal3">Conviertete en un conductor</a>
+			</div>
+    </div>
+    <!-- modal para registrarse -->
+     <!-- Modal Structure -->
+    <div id="modal2" class="modal ">
+      <div class="modal-content">
+        <div class="row ">
+          <form class="col s12">
+            <div class="row btn">
+              <div class="col s12 "> 
+                <a href="#" class="btn boton black center">YA TIENES UNA CUENTA</a>
+              </div>
+            </div>
+            <p class="center ">O CREA UNA CUENTA NUEVA</p>
+            <div class="row ">
+              <div class="input-field col s6">
+                <input placeholder="Nombre"  type="text" class="validate ">
+              </div>
+              <div class="input-field col s6">
+                <input placeholder="Apellido"  type="text" class="validate black-text">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Correo Electronico@correo.mx" type="password" class="validate">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Telefono" type="email" class="validate">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Contraseña" type="email" class="validate">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Ciudad" type="email" class="validate">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Opcional(Codigo de invitacion)" type="email" class="validate">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- fin del modal de resgitro -->
+    <!-- modal conviertete en conductor -->
+    <div id="modal3" class="modal black-text">
+      <div class="modal-content">
+        <div class="row black-text">
+          <span class="black-text">Tienes vehiculos de 4 puertas?</span>
+          <div class="input-field col s12 white">
+            <select>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <!-- <label class="gray-text">Tiene vehiculo de 4 puertas?</label> -->
+            <label>Materialize Select</label>
+          </div>
+        </div>
+        <div class="row ">
+          <span class="black-text">Marca</span>
+          <div class="input-field col s12 white">
+            <select>
+              <option value="" disabled selected></option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label for="">Marca</label>
+          </div>
+        </div>
+        <span>No ves tu vehiculo en la lista ,Enviá un correo Electronica<span class="blue-text">sociosmdb@uber.com</span></span>
+        <div class="row ">
+         <span class="black-text">Modelo</span>
+          <div class="input-field col s12 white">
+            <select>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label>Modelo</label>
+          </div>
+        </div>
+        <div class="row ">
+          <span class="black-text">Año</span>
+          <div class="input-field col s12 white">
+            <select>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label>Año</label>
+          </div>
+        </div>
+        <div class="row">
+          <span class="black-text">Numero de Matricula</span>
+          <div class="input-field col s12 white">
+            <select>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label>Numero de la Matricula</label>
+          </div>
+        </div>
+        <span class="black-text">La informacion de la maticula ayuda a alos clientes a identificar tu vehículos </span><br><br>
+        <button class="btn-mod3 green black-text">ENVIAR</button>
+      </div>
+    </div>
+<!-- fin del modal -->
   </section>
   <section class="download">
     <div class="box-download">
@@ -70,30 +212,32 @@
   <section class="driver">
 		<div class="row ">
 			<div class="col s12 l4  driver-text right">
-				<h4>Conduce cuando quieras</h4>
+				<h5 class="font-weight">Conduce cuando quieras</h5>
 				<p>Labcar es una opcion flexible para alcanzar las <br> metas financieras</p>
-				<button>Conviertete en conductor</button>
+				<a class="waves-effect waves-light btn margin-top font-weight amber pulse">Conviertete en conductor</a>
 			</div>
 		</div>
   </section>
   <section class="rates">
     <div class="container">
-      <div class="row">
+      <div class="row box-rates">
         <div class="col s12 l6">
-          <h2>Tarifas</h2>
+          <h3>Tarifas</h3>
           <p>Consulta las tarifas Labcar aquí</p>
           <form action="">
-            <div >
-              <img  class="left" src="assets/images/shape.png" alt="shape">
-              <input type="text" name="" placeholder="Ingrese su punto de Partida">
-            </div>
-            <br>
-            <div class="inline">
-              <img src="assets/images/shape2.png" alt="shape">
-                <input type="text" name="" placeholder="Ingrese su Destino">
-            </div>
-            <button>¡TRAZAR TU RUTA!</button>
-          </form>
+						<br>
+						<div class="input-field">
+							<img class="prefix" src="assets/images/shape.png" alt="shape">
+							<input id="icon_prefix" type="text" class="validate" placeholder="Ingrese su punto de Partida">
+						</div>
+						<div class="input-field ">
+							<img class="prefix" src="assets/images/shape2.png" alt="shape">
+							<input  class="white-text"	id="icon_prefix" type="text" class="validate" placeholder="Ingrese su destino">
+						</div>
+						<div class="center">
+					  	<a class="waves-effect waves-light btn margin-top font-weight white black-text center-align pulse">¡TRAZAR TU RUTA!</a>
+					  </div>
+					</form>
         </div>
         <div class="col s12 l6">
           <picture>
@@ -111,11 +255,11 @@
       <div class="row">
         <div class="col s6 l3  flex-container icon-group right ">
           <ul class="flex-end">
-            <li><i class="fa fa-facebook" aria-hidden="true"></i></li> 
-            <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-            <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-            <li><i class="fa fa-apple" aria-hidden="true"></i></li>
-            <li><i class="fa fa-play" aria-hidden="true"></i></li>
+            <li class="icon-g"><i class="fa fa-facebook" aria-hidden="true"></i></li> 
+            <li class="icon-g"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            <li class="icon-g"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+            <li class="icon-g"><i class="fa fa-apple" aria-hidden="true"></i></li>
+            <li class="icon-g"><i class="fa fa-play" aria-hidden="true"></i></li>
           </ul>
         </div>
         <div class="col s6 l3">
@@ -156,5 +300,7 @@
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="vendors/js/materialize.min.js"></script>
+<!-- my javascript -->
+<script type="text/javascript"  src="js/app.js"></script>
 </body>
 </html>

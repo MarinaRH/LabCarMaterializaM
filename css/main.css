@@ -16,7 +16,7 @@
 }
 
 .line-height {
-	line-height: 1.8;
+	line-height: 2;
 }
 
 .margin-lef {
@@ -38,19 +38,6 @@
 .font-weight {
 	font-weight: 700;
 }
-/* .inline {
-	display:inline;
-} */
-/* 
-.right {
-	float: right;
-}
-
-.left {
-float: left;
-} */
-
-/* header */
 
 /* section register */
 
@@ -58,7 +45,8 @@ float: left;
   background-image:url("../assets/images/taxi.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
   width: 100%;
   height: 120vh;
 }
@@ -72,19 +60,22 @@ float: left;
 
 img.log-white {
   padding-left:14px;
-  width: 80px;
+  width: 90px;
 }
 
 .text-top {
-	margin-top: -14px;
+	margin-top: -12px;
 }
+
 /* download */
 .download {
 	background-color: var(--orange);
+	margin-bottom: 0;
 }
 
 .box {
-	padding: 21px;
+	padding: 21px ;
+	margin-bottom: 0;
 }
 
 .box-mobile {
@@ -97,41 +88,69 @@ img.log-white {
 	background-image:url("../assets/images/conduce.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
   width: 100%;
 	height: 450px;
 }
 
 .driver-text{
-	background-color: rgba(0, 0, 0, 0.315);
-	padding: 80px 21px 230px 21px;
+	box-sizing:border-box ;
+	background-color: rgba(0, 0, 0, 0.39);
+	height: 75vh;
 }
 
 /* rates */
+
 .rates {
 	background-color: var(--orange);
+	height: 90vh auto;
 }
 
+.box-rates {
+	margin-bottom:0; 
+	}
+
 .img-map {
-	height:60vh ;
+	height:70vh ;
 	width: 100%;
 	border:1px solid white;
 	padding: 10px;
-	margin: 35px 0;
+	margin: 25px auto;
 	}
 	
+#icon_prefix {
+	border: 1px solid white;
+	width: 75%;
+	border-radius: 9px;
+	height: 35px;
+	}
 
-	/* footer */
- footer {
+::placeholder {
+	color: white; 
+}
+
+/* footer */
+footer {
 	background-color: rgb(43,43,43);
-	padding-top: 21px;
- }
+	margin: 0 auto;
+}
 
+.icon-g {
+	display: inline;
+	padding: 0 7px ;
+}
 
-
+ul li:hover {
+	color: rgb(247,182,23);
+	font-size: 18px;
+	font-weight: 700;
+}
 /* descktop */
 
 @media (min-width: 992px) {
+/* header */
+	
 /* pseudoclase para las lineas */
 	span.line::before {
 	display: inline-block;
@@ -167,10 +186,16 @@ img.log-white {
 	.box-mobile {
 		border: none;
 	}
+	/* section register */
+
+	.box-register {
+		float: right !important;
+	}
 	/* section driver */
 	.driver-text{
-	  background-color: rgba(0, 0, 0, 0.315);
-	  padding: 60px 21px 21px;
+		background-color: rgba(0, 0, 0, 0.315);
+		height: 40vh;
+		padding-top: 50px !important;
 	}
 
 	/* footer */
